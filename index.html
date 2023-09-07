@@ -11,18 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <!-- tailwind and daisy linking here -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
     <!-- fontawsome linking here -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
@@ -30,16 +19,48 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- tailwind and daisy linking here -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <header>
-      <div class="header">
-        <p class="logo">LOGO</p>
-        <div class="cart">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-          <p id="count">0</p>
+  <body class="container mx-auto">
+    <header class="flex items-center justify-items-center flex-col">
+      <div
+        class="header h-20 w-full flex items-center justify-between p-4 my-4 bg-lime-400 rounded-lg"
+      >
+        <p class="logo font-bold text-4xl text-white">LOGO</p>
+        <div
+          class="cart bg-white py-2 px-2.5 flex justify-between items-center rounded-lg"
+        >
+          <i
+            class="fa fa-shopping-cart text-lime-500 mr-4 text-2xl"
+            aria-hidden="true"
+          ></i>
+          <p
+            class="h-6 w-6 bg-lime-400 text-white rounded-full flex items-center justify-center"
+            id="count"
+          >
+            0
+          </p>
         </div>
       </div>
     </header>
+    <main class="flex items-center justify-items-center flex-col">
+      <div id="root"></div>
+      <div class="sidebar">
+        <div class="head">
+          <p></p>
+        </div>
+        <div id="cartitem">your cart is empty</div>
+        <div class="foot">
+          <h3>total</h3>
+          <h2 id="total">$0.00</h2>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
