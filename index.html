@@ -32,7 +32,7 @@
       <div
         class="header h-20 w-full flex items-center justify-between p-4 my-4 bg-lime-400 rounded-lg"
       >
-        <p class="logo font-bold text-4xl text-white">LOGO</p>
+        <p class="logo font-bold text-4xl text-white">SHADMAN</p>
         <div
           class="cart bg-white py-2 px-2.5 flex justify-between items-center rounded-lg"
         >
@@ -49,10 +49,8 @@
         </div>
       </div>
     </header>
-    <main class="flex items-center justify-items-center flex-col">
-      <div id="root" class="w-3/5 grid grid-cols-2 gap-5">
-        <div class="w-full"></div>
-      </div>
+    <main class="flex">
+      <div id="root" class="w-3/5 grid grid-cols-2 gap-5"></div>
       <div
         class="sidebar capitalize w-2/5 rounded-md bg-neutral-300 ml-4 p-4 text-center"
       >
@@ -61,12 +59,15 @@
         >
           <p class="text-xl font-bold">my cart</p>
         </div>
-        <div id="cartitem">your cart is empty</div>
-        <div class="foot flex justify-between text-md font-semibold">
+        <div id="cartItem">your cart is empty</div>
+        <div
+          class="foot flex justify-between my-5 border-t-2 border-black text-md font-semibold"
+        >
           <h3>total</h3>
           <h2 id="total">$0.00</h2>
         </div>
       </div>
     </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
